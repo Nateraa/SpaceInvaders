@@ -50,7 +50,7 @@ class SpaceInvaders{
     	dificultad = Dificultad();
 		for (int i = 0; i < dificultad; i++)
 		{
-			xe[i] = 1 + rand() % (63 - 1);
+			xe[i] = 1 + rand() % (64 - 1);
 			ye[i] = - rand() % (dificultad*2 - 1);
 			
 		}
@@ -78,6 +78,13 @@ class SpaceInvaders{
     cout << "|     En este videojuego eres una nave cuya finalidad no te     |" << endl; 
     cout << "|            tienes que chocar con los meteoritos               |" << endl; 
     cout << "|---------------------------------------------------------------|" << endl; 
+    cout << "                      [*]  Controles  [*]                        " << endl; 
+    cout << "|---------------------------------------------------------------|" << endl; 
+    cout << "|           a/A -> izquierda           d/D -> derecha           |" << endl; 
+    cout << "|---------------------------------------------------------------|" << endl << endl; 
+
+    cout << "AVISO: Si el rendimiento de su dispositivo es bajo, al dejar pulsado a/d puede notar LAGS" << endl;
+
     }
 
     int Dificultad(){
@@ -93,17 +100,17 @@ class SpaceInvaders{
     {
     case 1:
         cout << "[*] Has elegido la dificultad Facil" << endl;
-		dificultad = 5;
+		dificultad = 9;
         sleep(1);
     break;
     case 2:
         cout << "[*] Has elegido la dificultad media" << endl;
-		dificultad = 10;
+		dificultad = 14;
         sleep(1);
     break;
     case 3:
         cout << "[*] Has elegido la dificultad dificil" << endl;
-		dificultad = 15;
+		dificultad = 16;
         sleep(1);
     break;
     
@@ -126,7 +133,7 @@ class SpaceInvaders{
 
     //tests debug
     cout << endl;
-    cout << "[*] INFO: " << " | X: " << x; cout << " | Y: " << y << " | Dificultad: " << dificultad << " | Tiempo: " << tiempo << " | Aleatorio: " << xe << endl << endl;
+    cout << "[*] INFO: " << " | X: " << x; cout << " | Y: " << y << endl << endl;
 
     }
 
@@ -134,7 +141,6 @@ class SpaceInvaders{
         
     while (game_running == true)
     {
-    
     //Cabecera
     system("clear");
     figlet();
@@ -160,17 +166,16 @@ class SpaceInvaders{
             vidas = vidas - 1;
 			mapa[ye[i]][xe[i]] = ' ';
 			ye[i] = 1;
-			xe[i] = 1 + rand() % (63 - 1);
+			xe[i] = 1 + rand() % (64 - 1);
 			mapa[ye[i]][xe[i]] = '*';
 			
         } else if (x != xe[i]){
-            puntos = puntos + 10;
+            puntos = puntos + 1;
         }
     }
 	}
 
-	tiempo = tiempo + 1; sleep(1);
-    
+    usleep(90000);
         // Detectar movimientos
         if (kbhit()){
             switch (getch())
@@ -196,6 +201,7 @@ class SpaceInvaders{
                     }}}
                 break;
                 break;
+
             }
         }
 
@@ -216,13 +222,12 @@ class SpaceInvaders{
     } else if (mapa[ye[i] + 1][xe[i]] == '-'){
     mapa[ye[i]][xe[i]] = ' ';
 	ye[i] = 1;
-	xe[i] = 1 + rand() % (63 - 1);
+	xe[i] = 1 + rand() % (64 - 1);
 	mapa[ye[i]][xe[i]] = '*';
     }
 	}
-	
-	
     }
+    
     finaldeljuego();
     }
 
@@ -236,6 +241,8 @@ class SpaceInvaders{
         cout << "|---------------------------------------------------------------|" << endl; 
         cout << "                   HAS TERMINADO CON "<< puntos << " PUNTOS " << "                 " << endl; 
         cout << "|---------------------------------------------------------------|" << endl;
+        cout << endl; cout << "[*] Saliendo ... " << endl ;
+        system("paplay endmusic.wav");
 
         return EXIT_FAILURE;
 
@@ -258,4 +265,3 @@ string getFileContents (ifstream& File)
     else{
 	return "No se ha podido printear el figlet";}
 }
-
