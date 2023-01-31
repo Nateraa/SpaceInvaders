@@ -1,9 +1,20 @@
 # SpaceInvaders (C++)
 
-<h1 align="center">Descripción</h1>
+## Descripción 🚀
 
-## :hammer:
-<h1 align="center">Demo</h1>
+Space Invaders es un videojuego arcade, Este es uno de los primeros juego el cuál se trata en esquivar asteroides. Es uno de los videojuegos más importantes de la historia. Su objetivo se basa en superar oleadas de asteroides y obtener la mayor cantidad de puntos posible. Aunque es un juego simple para los estándares actuales, fue uno de los precursores de los videojuegos modernos.
+
+### Instalación 🔧
+
+Siga los siguientes pasos para la instalación y ejecución
+
+```
+git clone https://github.com/NateraaaTN/SpaceInvaders/
+cd SpaceInvaders
+./game.out
+```
+
+### Demo ⌨️
 
 -| Selección de dificultad |-
 
@@ -16,3 +27,12 @@
 -| Final del videojuego |- 
 
 ![final-spaceinvaders](https://user-images.githubusercontent.com/118772521/211328975-9b2575a8-1f06-4373-bcd4-ee0ba16ca02f.png)
+
+## Autores ✒️
+* **Andrés Villanueva** - *Planteamineto y realización* - [villanuevand](https://github.com/villanuevand)
+
+## Licencia 📄
+Este proyecto está bajo la Licencia (Tu Licencia) - mira el archivo [LICENSE.md](LICENSE.md) para detalles
+
+---
+⌨️ con ❤️ por [NateraaaTN]([https://github.com/NateraaaTN/]) 😊
