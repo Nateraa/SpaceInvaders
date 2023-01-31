@@ -1,6 +1,9 @@
-<em> # SpaceInvaders (C++) </em>
+# SpaceInvaders (C++)
 
 <h1 align="center">Descripción</h1>
+
+## :hammer:
+<h1 align="center">Demo</h1>
 
 -| Selección de dificultad |-
 
