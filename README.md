@@ -29,7 +29,7 @@ cd SpaceInvaders
 ![final-spaceinvaders](https://user-images.githubusercontent.com/118772521/211328975-9b2575a8-1f06-4373-bcd4-ee0ba16ca02f.png)
 
 ## Autores ✒️
-* **Andrés Villanueva** - *Planteamineto y realización* - [villanuevand](https://github.com/villanuevand)
+* **Alejandro Natera** - *Planteamineto y realización* - [NateraaaTN]([https://github.com/NateraaaTN/])
 
 ## Licencia 📄
 Este proyecto está bajo la Licencia (Tu Licencia) - mira el archivo [LICENSE.md](LICENSE.md) para detalles
