@@ -1,4 +1,4 @@
-
+<center>
 <h1 align="center" width="200px" height="200px">
 
   ![SI](https://user-images.githubusercontent.com/118772521/217001070-d37e4cc0-75d4-4e81-b879-fe14c752267b.png)
@@ -8,20 +8,6 @@
 </h1>
 
 <h4 align="center">SpaceInvaders realizado en <a href="https://isocpp.org/" target="_blank">C++</a>.</h4>
-
-<p align="center">
-  <a href="https://badge.fury.io/js/electron-markdownify">
-    <img src="https://badge.fury.io/js/electron-markdownify.svg"
-         alt="Gitter">
-  </a>
-  <a href="https://gitter.im/amitmerchant1990/electron-markdownify"><img src="https://badges.gitter.im/amitmerchant1990/electron-markdownify.svg"></a>
-  <a href="https://saythanks.io/to/bullredeyes@gmail.com">
-      <img src="https://img.shields.io/badge/SayThanks.io-%E2%98%BC-1EAEDB.svg">
-  </a>
-  <a href="https://www.paypal.me/AmitMerchant">
-    <img src="https://img.shields.io/badge/$-donate-ff69b4.svg?maxAge=2592000&amp;style=flat">
-  </a>
-</p>
 
 <p align="center">
   <a href="#key-features">Caracteristicas</a> •
@@ -38,7 +24,7 @@ Space Invaders es un videojuego arcade, Este es uno de los primeros juego el cu�
 ## Key Features
 * Codigo Optimizado para su correcto funcionamiento
    - Codigo Estructurado
-* Funcionalidades AudioVisuales
+## Funcionalidades AudioVisuales
    - 
 * Modo de pantalla completa
    - Escribe sin distracciones.
@@ -72,11 +58,7 @@ This software uses the following open source packages:
 
 ## License
 
-MIT
-
----
-
-Este proyecto está bajo la Licencia (Tu Licencia) - mira el archivo [LICENSE.md](LICENSE.md) para detalles
+Este proyecto está bajo la Licencia (MIT License) - mira el archivo [LICENSE.md](LICENSE.md) para detalles
 
 ---
 
